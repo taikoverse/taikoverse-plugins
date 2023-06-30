@@ -4,7 +4,7 @@ import fs from "fs";
 glob("./plugins/*", (_, plugins) => {
   const index = {
     plugins: plugins.map((p) => "/" + p.replace("./plugins/", "") + ".js"),
-    source: "https://github.com/latticexyz/opcraft-plugins",
+    source: "https://github.com/taikoverse/taikoverse-plugins",
   };
 
   fs.mkdirSync("./www");
